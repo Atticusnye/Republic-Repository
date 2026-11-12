@@ -1,0 +1,834 @@
+<!DOCTYPE html>
+<html lang="en-US" class="transparentSkybridgeBackground desktopSkybridge dark" data-theme="dark" style="color-scheme: dark; --safe-area-inset-top: 0px; --safe-area-inset-bottom: 0px; --safe-area-inset-left: 0px; --safe-area-inset-right: 0px;"><head><style>@layer sandbox-defaults{html,body,#root{margin:0;padding:0}}</style><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#080b0e"><title>Republic Supply Depot — My Wishlist</title><style>
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap');
+:root{--bg:#080b0e;--panel:#11161c;--panel2:#161c22;--border:#293039;--muted:#85909b;--ink:#e7ebec;--red:#dc343a;--red2:#8c242a;--white:#f3f3f0;--font-head:'Barlow Condensed','Arial Narrow',sans-serif;--font-body:'Inter',Arial,sans-serif}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;color:var(--ink);font:14px/1.65 var(--font-body);background:var(--bg);min-height:100vh}button,input,select,textarea{font:inherit}button{cursor:pointer}a{color:inherit}::selection{background:#9c3338;color:white}
+body:before{content:'';position:fixed;inset:0;pointer-events:none;z-index:0;opacity:.33;background-image:linear-gradient(rgba(169,184,201,.018) 1px,transparent 1px),linear-gradient(90deg,rgba(169,184,201,.018) 1px,transparent 1px);background-size:44px 44px}
+.topline{height:3px;background:linear-gradient(90deg,transparent 0%,#6b1b21 20%,#f04447 50%,#6b1b21 80%,transparent 100%);box-shadow:0 0 17px rgba(220,52,58,.55)}
+.shell{width:min(1250px,calc(100% - 64px));margin:auto;position:relative;z-index:1}
+.masthead{display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--border);height:78px;gap:20px}
+.brand{display:flex;align-items:center;gap:14px;font-family:var(--font-head);letter-spacing:.14em;font-size:19px;font-weight:700;text-transform:uppercase;white-space:nowrap}
+.brand-mark{width:36px;height:36px;border:2px solid #e3e8e9;border-radius:50%;display:flex;align-items:center;justify-content:center;position:relative;box-shadow:inset 0 0 0 5px #10151a;font-size:19px;line-height:1}
+.brand-mark:before,.brand-mark:after{content:'';position:absolute;background:#e3e8e9;left:50%;transform:translateX(-50%);width:2px;height:11px}.brand-mark:before{top:-7px}.brand-mark:after{bottom:-7px}
+.brand-mark i{font-style:normal;transform:translateY(-1px)}
+.nav{display:flex;align-items:center;gap:21px;color:#9ba5af;font:600 12px var(--font-body);letter-spacing:.11em;text-transform:uppercase}.nav .live{display:flex;align-items:center;gap:9px;color:#c9d3d8}.dot{display:inline-block;width:6px;height:6px;background:#df4549;border-radius:50%;box-shadow:0 0 10px #e74a4f;animation:blink 2.6s ease-in-out infinite}@keyframes blink{50%{opacity:.35}}
+.hero{padding:70px 0 74px;position:relative;overflow:hidden;border-bottom:1px solid var(--border)}
+.hero:before{content:'';position:absolute;right:-60px;top:-45px;width:min(49vw,540px);aspect-ratio:1;border-radius:50%;background:repeating-conic-gradient(from 0deg,rgba(201,214,219,.105) 0deg 1.5deg,transparent 1.5deg 12deg),radial-gradient(circle,transparent 0 30%,rgba(207,215,217,.08) 30.2% 30.5%,transparent 31% 45%,rgba(207,215,217,.15) 45.2% 45.5%,transparent 46% 66%,rgba(207,215,217,.13) 66.2% 66.5%,transparent 67%);border:1px solid rgba(209,219,225,.09);mask-image:linear-gradient(90deg,transparent,#000 30%);animation:rotate 95s linear infinite}
+.hero:after{content:'';position:absolute;right:19%;top:50%;width:8px;height:8px;background:#c93b40;border-radius:50%;box-shadow:0 0 0 8px rgba(208,51,59,.09),0 0 35px 10px rgba(208,51,59,.18)}
+@keyframes rotate{to{transform:rotate(360deg)}}
+.overline{font:700 11px var(--font-body);color:#c9a5a8;letter-spacing:.28em;text-transform:uppercase;display:flex;align-items:center;gap:13px}.overline:before{content:'';width:21px;height:2px;background:var(--red)}
+h1,h2,h3,p{margin-top:0}.hero h1{font:700 clamp(66px,10.4vw,145px)/.84 var(--font-head);text-transform:uppercase;letter-spacing:.012em;max-width:780px;margin:23px 0 22px;color:#f2f3f2}.hero h1 span{color:var(--red)}.hero p{color:#98a3ad;max-width:460px;font-size:15px;line-height:1.85}.hero-footer{display:flex;gap:28px;align-items:center;flex-wrap:wrap;margin-top:34px;font-family:var(--font-head);letter-spacing:.15em;font-size:15px;text-transform:uppercase;color:#a8b0b5}.hero-footer span{padding-left:12px;border-left:2px solid #773237}
+.main{padding-top:30px;padding-bottom:74px}
+.actions{display:flex;justify-content:space-between;align-items:center;gap:13px;flex-wrap:wrap;padding:20px 0 30px}.group{display:flex;align-items:center;flex-wrap:wrap;gap:10px}
+.button{display:inline-flex;align-items:center;justify-content:center;gap:10px;background:#171e24;color:#e4e8e9;border:1px solid #343d47;padding:12px 19px;min-height:44px;border-radius:3px;font:700 12px var(--font-body);letter-spacing:.06em;text-transform:uppercase;text-decoration:none;transition:background .2s,border-color .2s,transform .2s,box-shadow .2s}.button:hover{background:#242c35;border-color:#62717d;transform:translateY(-2px)}.button:focus-visible{outline:2px solid #ef666c;outline-offset:3px}.button.primary{background:#d43b3f;border-color:#ef5559;color:#fff;box-shadow:inset 0 1px 0 #ffffff22}.button.primary:hover{background:#ef484b;box-shadow:0 10px 25px #d43b3f35}.button.dark{background:#d43b3f;border-color:#d43b3f;color:#fff}.button.ghost{color:#aeb7bc;background:transparent}.button.ghost:hover{color:#ff737a;border-color:#8c363c}
+.panel-section{border:1px solid var(--border);background:linear-gradient(125deg,#151b21,#0f1419);position:relative}.panel-section:before{content:'';position:absolute;top:-1px;left:0;height:2px;width:76px;background:var(--red)}
+.dashboard{display:grid;grid-template-columns:minmax(290px,1.1fr) minmax(0,1fr);margin-bottom:32px}.guide{padding:26px 30px;border-right:1px solid var(--border)}.label{font:700 11px var(--font-body);letter-spacing:.19em;text-transform:uppercase;color:#909da6}.guide h2{font:600 30px var(--font-head);letter-spacing:.09em;text-transform:uppercase;margin:10px 0 6px;color:#e4e9eb}.guide p{font-size:13px;color:#95a0aa;max-width:500px;margin:0}.stats{display:grid;grid-template-columns:repeat(3,1fr)}.stat{padding:25px 16px;border-left:1px solid var(--border);display:flex;flex-direction:column;justify-content:center}.stat:first-child{border-left:none}.stat .value{font:600 48px/1 var(--font-head);margin-top:11px;color:#e9ecee}.stat .label{font-size:10px;letter-spacing:.12em}
+.catalogue-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:17px;gap:12px}.catalogue-head h2{font:700 29px var(--font-head);letter-spacing:.13em;text-transform:uppercase;margin:0}.catalogue-head small{color:#8b99a5;font:700 11px var(--font-body);letter-spacing:.16em;text-transform:uppercase}
+.filters{display:grid;grid-template-columns:minmax(180px,2fr) minmax(150px,1fr) minmax(160px,1fr);gap:10px;margin-bottom:12px}.filters input,.filters select,.field input,.field select,.field textarea{background:#11171d;color:#e5e9eb;border:1px solid #343e48;border-radius:3px;padding:13px 14px;width:100%;outline:none}.filters input::placeholder,.field input::placeholder,.field textarea::placeholder{color:#74818b}.filters input:focus,.filters select:focus,.field input:focus,.field textarea:focus,.field select:focus{border-color:#c34b51;box-shadow:0 0 0 2px #c34b5123}.stats-line{font:600 11px var(--font-body);letter-spacing:.13em;text-transform:uppercase;color:#8896a0;margin:10px 0 16px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(255px,1fr));gap:18px}.gift{background:#151b20;border:1px solid #303943;display:flex;flex-direction:column;min-width:0;position:relative;animation:rise .42s both;animation-delay:calc(min(var(--i),8)*45ms);transition:border-color .22s,box-shadow .22s,transform .22s}.gift:hover{border-color:#9b4248;box-shadow:0 17px 38px #0005;transform:translateY(-4px)}@keyframes rise{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}.gift:before,.gift:after{position:absolute;content:'';width:14px;height:14px;z-index:1;pointer-events:none}.gift:before{top:-1px;left:-1px;border-top:2px solid #8a3238;border-left:2px solid #8a3238}.gift:after{bottom:-1px;right:-1px;border-right:2px solid #8a3238;border-bottom:2px solid #8a3238}
+.photo{position:relative;aspect-ratio:4/3;display:flex;align-items:center;justify-content:center;overflow:hidden;background:radial-gradient(circle at 50% 20%,rgba(110,230,255,.18),transparent 32%),linear-gradient(180deg,#11243c 0%,#08111d 62%,#091520 100%)}.photo:before{content:"";position:absolute;left:50%;bottom:12px;transform:translateX(-50%);width:72%;height:18%;border-radius:50%;background:radial-gradient(circle,rgba(123,230,255,.42) 0%,rgba(73,163,242,.18) 36%,rgba(21,52,88,.08) 62%,transparent 75%);box-shadow:0 0 28px rgba(98,220,255,.18), inset 0 0 0 1px rgba(121,227,255,.15)}.photo:after{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(180deg,rgba(156,236,255,.09),transparent 22%,transparent 78%,rgba(111,230,255,.12)),repeating-linear-gradient(180deg,rgba(188,245,255,.08) 0 2px,rgba(0,0,0,0) 2px 7px);mix-blend-mode:screen}.photo img{width:100%;height:100%;object-fit:contain;transition:transform .55s,filter .55s,opacity .55s;opacity:.94;filter:grayscale(.18) brightness(1.08) sepia(.18) hue-rotate(152deg) saturate(2.4) drop-shadow(0 0 16px rgba(103,226,255,.55)) drop-shadow(0 0 36px rgba(58,167,255,.18))}.gift:hover .photo img{transform:translateY(-4px) scale(1.05);filter:grayscale(.08) brightness(1.15) sepia(.18) hue-rotate(152deg) saturate(2.8) drop-shadow(0 0 20px rgba(117,235,255,.72)) drop-shadow(0 0 42px rgba(58,167,255,.28))}.placeholder{font:400 110px/.8 var(--font-head);color:#47545e}.tag{position:absolute;top:13px;left:13px;background:#141a20df;border:1px solid #69717a87;padding:6px 10px;font:700 10px var(--font-body);letter-spacing:.09em;text-transform:uppercase;color:#e7e8ea;z-index:2;backdrop-filter:blur(9px)}.gift-body{display:flex;flex-direction:column;flex:1;padding:20px}.item-id{font:700 10px var(--font-body);color:#bf4b50;letter-spacing:.2em;margin-bottom:10px}.gift h3{font:600 31px/.98 var(--font-head);letter-spacing:.035em;text-transform:uppercase;margin:0 0 11px;overflow-wrap:anywhere}.price{font:600 29px/1 var(--font-head);letter-spacing:.04em;margin-bottom:8px;color:#f2f2f0}.meta{font:700 10px var(--font-body);text-transform:uppercase;letter-spacing:.14em;color:#acb5bc;margin-bottom:12px}.description{font-size:12px;color:#98a2ab;white-space:pre-wrap;overflow-wrap:anywhere;margin:0 0 20px}.gift-actions{display:flex;gap:6px;flex-wrap:wrap;margin-top:auto;padding-top:16px;border-top:1px solid #303842}.gift-actions .button{font-size:10px;min-height:35px;padding:8px 11px}.gift-actions a{flex:1}
+.empty{padding:70px 20px;text-align:center;border:1px dashed #45515b;background:linear-gradient(160deg,#131a21,#0d1217);grid-column:1/-1}.empty .icon{font:500 70px var(--font-head);color:#9c3e43;line-height:1}.empty h2{font:700 49px/1 var(--font-head);letter-spacing:.07em;text-transform:uppercase;margin:17px 0 8px}.empty p{max-width:430px;margin:0 auto 22px;color:#909ca7}
+footer{border-top:1px solid var(--border);padding:24px 0 34px;font:600 10px var(--font-body);letter-spacing:.19em;text-transform:uppercase;color:#717f89;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.modal{position:fixed;inset:0;background:rgba(0,0,0,.79);backdrop-filter:blur(7px);display:none;align-items:center;justify-content:center;padding:16px;z-index:10}.modal.open{display:flex}.panel{width:min(100%,620px);max-height:94vh;overflow:auto;background:#171d23;border:1px solid #54606a;padding:29px;box-shadow:0 30px 90px #000b;position:relative}.panel:before{content:'';position:absolute;top:0;left:0;width:110px;height:3px;background:var(--red)}.panel h2{font:700 42px/1 var(--font-head);text-transform:uppercase;letter-spacing:.08em;margin:7px 0 22px}.field{margin-bottom:13px}.field label{display:block;margin-bottom:6px;font:700 11px var(--font-body);text-transform:uppercase;letter-spacing:.1em;color:#b6c0c8}.field small,.hint{font-size:11px;color:#87949e}.field textarea{min-height:80px;resize:vertical}.two{display:grid;grid-template-columns:1fr 1fr;gap:12px}.panel-actions{display:flex;justify-content:flex-end;gap:10px;margin-top:22px}#upload-label{border:1px dashed #59656e;background:#10151a;padding:13px;display:block;cursor:pointer}#image-file{font-size:11px;width:100%}.toast{position:fixed;bottom:26px;left:50%;transform:translateX(-50%);padding:12px 20px;background:#e8ebeb;color:#14181d;font-weight:700;box-shadow:0 12px 45px #0009;z-index:20;display:none;max-width:90vw;text-align:center}
+@media(max-width:900px){.dashboard{grid-template-columns:1fr}.guide{border-right:none;border-bottom:1px solid var(--border)}.hero:before{opacity:.4}.hero:after{opacity:.5}}@media(max-width:650px){.shell{width:min(100% - 30px,1250px)}.masthead{height:69px}.brand{font-size:16px}.nav .metadata{display:none}.hero{padding:55px 0 62px}.hero h1{font-size:clamp(64px,17vw,100px)}.hero p{max-width:330px}.main{padding-top:18px}.actions{padding:8px 0 24px}.group{width:100%}.group .button{flex:1;padding-left:8px;padding-right:8px}.filters{grid-template-columns:1fr}.stats .stat{padding:20px 12px}.stat .value{font-size:38px}.stat .label{font-size:9px}.catalogue-head h2{font-size:25px}.panel{padding:22px}.two{grid-template-columns:1fr}}@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+
+/* REPUBLIC ERA: cool cyan and cobalt instead of Imperial red. */
+:root{--bg:#070f1b;--panel:#0f1b29;--panel2:#172738;--border:#314b60;--muted:#91a9bb;--ink:#eff7ff;--red:#68d5ff;--red2:#2b7095;--white:#f6faff}
+body{background:radial-gradient(ellipse at 74% 8%,#13365a 0%,transparent 40%),radial-gradient(ellipse at 10% 58%,#102640 0%,transparent 45%),#070f1b}
+body:before{background-image:linear-gradient(rgba(104,213,255,.028) 1px,transparent 1px),linear-gradient(90deg,rgba(104,213,255,.028) 1px,transparent 1px)}
+.topline{background:linear-gradient(90deg,#285c8b,#71dfff,#d9f8ff,#71dfff,#285c8b);box-shadow:0 0 24px #54cbff66}
+.brand-mark{border-color:#79d9ff;box-shadow:inset 0 0 0 5px #101e2e;color:#9fe7ff}.brand-mark:before,.brand-mark:after{background:#79d9ff}
+.hero{min-height:475px}.hero h1 span{color:#75d9ff}.hero:after{background:#59cfff;box-shadow:0 0 0 9px #4abffb24,0 0 42px 12px #56c8ff54}
+.hero-footer span{border-color:#278fba}.overline{color:#98dfff}
+.button.primary,.button.dark{background:#367fb7;border-color:#66caff;color:#fff}.button.primary:hover,.button.dark:hover{background:#49a2d5;box-shadow:0 10px 28px #3ca8e34f}
+.button:focus-visible{outline-color:#9ee9ff}.panel-section,.gift{background:linear-gradient(145deg,#14283a,#0b1725)}
+.gift:hover{border-color:#69c7eb}.gift:before,.gift:after{border-color:#55bbeb}.item-id{color:#80d4ff}.gift .photo{background:radial-gradient(circle at 50% 38%,#284967,#0a1726 72%)}
+.filters input:focus,.filters select:focus,.field input:focus,.field textarea:focus,.field select:focus{border-color:#67d1ff;box-shadow:0 0 0 2px #67d1ff33}.empty .icon{color:#6bd4ff}.panel:before{background:#6bd4ff}
+
+
+/* Interactive, friendly gift-shopping guide: no character imagery or external service. */
+body[data-viewer="true"] .actions,body[data-viewer="true"] .guide p{display:none}
+body[data-viewer="true"] .hero{min-height:340px}
+body[data-viewer="true"] .main{padding-top:35px}
+.assistant-launcher{position:fixed;right:24px;bottom:23px;z-index:30;display:flex;align-items:center;gap:11px;padding:12px 18px 12px 12px;color:#e9f8ff;background:#173650;border:1px solid #6dcaff80;box-shadow:0 15px 40px #0008,0 0 28px #3eb4f42a;border-radius:999px;font:700 13px var(--font-body);cursor:pointer;transition:transform .2s,box-shadow .2s}
+.assistant-launcher:hover{transform:translateY(-3px);box-shadow:0 18px 45px #000a,0 0 35px #3eb4f452}.assistant-launcher .assistant-face{display:grid;place-items:center;background:linear-gradient(150deg,#b8f6ff,#419ddd);color:#102239;width:32px;height:32px;border-radius:50%;font-size:18px}.assist-status{width:7px;height:7px;border-radius:50%;background:#67e9bd;box-shadow:0 0 10px #67e9bd}
+.assistant-panel{position:fixed;bottom:92px;right:24px;z-index:31;width:min(392px,calc(100vw - 28px));max-height:min(610px,calc(100vh - 110px));display:none;flex-direction:column;border-radius:18px;overflow:hidden;background:#111e2c;border:1px solid #5485a4;box-shadow:0 28px 90px #000b,0 0 34px #46bbfa24;animation:assistantEnter .28s ease-out both}
+.assistant-panel.open{display:flex}@keyframes assistantEnter{from{opacity:0;transform:translateY(15px) scale(.97)}to{opacity:1;transform:translateY(0) scale(1)}}
+.assistant-header{display:flex;align-items:center;justify-content:space-between;background:linear-gradient(110deg,#1e405c,#15334c);padding:16px;border-bottom:1px solid #426d87}.assistant-identity{display:flex;align-items:center;gap:11px}.assistant-avatar{display:grid;place-items:center;border-radius:12px;width:43px;height:43px;font-size:22px;background:linear-gradient(140deg,#abf1ff,#60a6d8);color:#143150;box-shadow:0 0 18px #6bcfff42}.assistant-identity strong{font-size:14px;display:block;line-height:1.5}.assistant-identity small{font-size:10px;color:#acd0e4;display:block}.assistant-x{border:0;background:#ffffff13;color:#d7eafa;width:31px;height:31px;border-radius:50%;font-size:22px;line-height:1;cursor:pointer}.assistant-x:hover{background:#ffffff2a}
+.assistant-content{padding:17px;overflow-y:auto;display:flex;flex-direction:column;gap:13px;min-height:235px}.assistant-message{font-size:13px;color:#dcecf9;padding:13px 15px;border-radius:13px 13px 13px 3px;border:1px solid #35536c;background:#1c3041;line-height:1.6}.assistant-message.answer{border-color:#317aa0;background:#12394c;color:#e2f7ff}.quick-questions{display:grid;grid-template-columns:1fr 1fr;gap:8px}.quick-questions button{background:#172c3f;color:#c8eafa;border:1px solid #3c6079;padding:10px 8px;border-radius:9px;font:600 11px var(--font-body);cursor:pointer;text-align:center}.quick-questions button:hover{background:#235373;border-color:#75d4ff}
+.assistant-form{padding:12px;display:flex;gap:8px;border-top:1px solid #35536c}.assistant-form input{flex:1;min-width:0;background:#0d1a27;color:#f0f9ff;border:1px solid #36556c;border-radius:10px;outline:none;padding:12px;font:12px var(--font-body)}.assistant-form input:focus{border-color:#6ccbf5}.assistant-form button{background:#4eace0;color:#06182a;border:0;border-radius:10px;width:42px;font-size:22px;font-weight:bold;cursor:pointer}.assistant-disclaimer{padding:0 12px 11px;text-align:center;color:#789aaf;font-size:10px}
+@media(max-width:650px){.assistant-panel{right:14px;bottom:82px;max-height:calc(100dvh - 100px)}.assistant-launcher{right:14px;bottom:14px;padding:9px 13px 9px 9px}.assistant-launcher .assistant-face{width:30px;height:30px}}
+@media(prefers-reduced-motion:reduce){.assistant-panel{animation:none!important}}
+
+/* R-9 astromech assistant: real uploaded reference, cleanly cut out and embedded. */
+.assistant-launcher{right:24px;bottom:23px;padding:10px 18px 10px 10px;gap:13px;min-height:75px;border-radius:18px;background:linear-gradient(115deg,#122638,#214964);border-color:#80d7ff99;overflow:visible;isolation:isolate}
+.assistant-launcher:before{content:"";position:absolute;inset:-2px;border:1px solid #75ddff77;border-radius:19px;pointer-events:none;animation:astromechScan 4s ease-in-out infinite}
+.assistant-launcher .assistant-face{position:relative;flex:none;width:66px;height:65px;border-radius:14px;background:radial-gradient(circle at 50% 35%,#4cb7e526,#0c233a);overflow:visible;box-shadow:inset 0 0 12px #9ae9ff24}
+.assistant-face img{height:100px;width:auto;max-width:none;position:absolute;bottom:-6px;left:50%;transform:translateX(-50%);object-fit:contain;filter:drop-shadow(0 5px 8px #000a);animation:astromechBob 3.5s ease-in-out infinite}
+.assistant-launcher .assist-status{margin-left:2px;animation:astromechBlink 1.4s steps(2,end) infinite}
+.assistant-header{padding:14px 16px}
+.assistant-avatar{width:59px;height:59px;flex:none;position:relative;background:radial-gradient(circle,#2d89b84a,#0c253a);border-radius:13px;border:1px solid #7bd7ff66;overflow:hidden;box-shadow:0 0 18px #6bcfff22}
+.assistant-avatar img{width:52px;height:76px;object-fit:contain;position:absolute;bottom:-14px;left:3px;filter:drop-shadow(0 4px 5px #0009);animation:astromechTilt 4.5s ease-in-out infinite}
+.assistant-identity strong{letter-spacing:.025em}
+.assistant-panel{bottom:116px}
+.assistant-message{line-height:1.7}
+@keyframes astromechBob{0%,100%{transform:translateX(-50%) translateY(0) rotate(-2deg)}50%{transform:translateX(-50%) translateY(-7px) rotate(2deg)}}
+@keyframes astromechTilt{0%,100%{transform:rotate(-3deg)}50%{transform:rotate(3deg)}}
+@keyframes astromechScan{0%,100%{box-shadow:0 0 4px #58cfff25}50%{box-shadow:0 0 22px #58cfff75}}
+@keyframes astromechBlink{0%,100%{background:#67e9bd}50%{background:#9ce5ff}}
+@media(max-width:650px){.assistant-launcher{right:12px;bottom:12px;min-height:65px;padding:8px 12px 8px 8px}.assistant-launcher .assistant-face{height:54px;width:55px}.assistant-face img{height:80px}.assistant-panel{right:12px;bottom:99px}}
+@media(prefers-reduced-motion:reduce){.assistant-face img,.assistant-avatar img,.assistant-launcher:before,.assistant-launcher .assist-status{animation:none!important}}
+
+/* Galactic Republic eight-spoke crest, inline and self-contained */
+.republic-crest{width:100%;height:100%;display:block;color:inherit;overflow:visible}
+.brand-mark{border:0;box-shadow:none;width:40px;height:40px;color:#d84d49;flex:none}
+.brand-mark:before,.brand-mark:after{display:none}
+.guide h2 .republic-crest{width:30px;height:30px;display:inline-block;vertical-align:-6px;margin-right:6px;color:#cf5150}
+.hero{isolation:isolate;min-height:510px}
+.hero h1,.hero p,.hero .overline,.hero-footer{position:relative;z-index:3}
+.hero-astro-zone{position:absolute;right:3%;top:4px;width:355px;height:470px;z-index:2}
+.crest-watermark{width:380px;height:380px;position:absolute;right:-50px;top:10px;color:rgba(127,203,239,.08);animation:republicTurn 80s linear infinite}
+.astro-halo{position:absolute;left:12%;right:10%;bottom:32px;height:36px;border-radius:50%;background:radial-gradient(ellipse,#3bbffe55,transparent 68%);filter:blur(8px);animation:haloBreath 3.3s ease-in-out infinite}
+.hero-astro-button{position:absolute;left:49px;top:45px;width:275px;height:389px;border:0;background:transparent;padding:0;cursor:pointer;filter:drop-shadow(0 14px 18px #0009);animation:droidFloat 3.3s ease-in-out infinite;transform-origin:50% 85%}
+.hero-astro-button:hover{filter:drop-shadow(0 0 19px #48d3ff70) drop-shadow(0 12px 20px #0009)}
+.hero-astro-button:focus-visible{outline:2px solid #9beaff;outline-offset:5px}
+.hero-astro-button .original-astro{width:100%;height:100%;display:block;overflow:visible}
+.hero-astro-caption{position:absolute;bottom:3px;left:50%;transform:translateX(-50%);white-space:nowrap;font:700 10px var(--font-body);letter-spacing:.15em;color:#96dfff;background:#0b1c2ddc;border:1px solid #3e8ca9;padding:7px 10px}
+.hero-astro-bubble{position:absolute;top:40px;right:-6px;padding:10px 12px;background:#10263ce9;border:1px solid #6acbfa;color:#d6f5ff;font:700 11px/1.45 var(--font-body);border-radius:12px 12px 3px 12px;z-index:3;max-width:168px;box-shadow:0 12px 22px #0007;animation:bubbleIn .5s both}
+.astro-dome{transform-origin:125px 122px;animation:domeLook 5.8s ease-in-out infinite}
+.astro-eye{animation:eyeBlink 3.8s ease-in-out infinite}
+.astro-lights circle{animation:lightBlink 1.2s steps(2,end) infinite}
+.astro-lights circle+circle{animation-delay:.6s}
+.hero-astro-button.surprised{animation:droidSurprise .7s ease-out 1}
+.assistant-launcher .assistant-face{width:57px;height:63px;flex:none;position:relative;overflow:visible;display:flex;align-items:center;justify-content:center}
+.assistant-launcher .assistant-face .original-astro{height:87px;width:65px;max-width:none;position:absolute;bottom:-10px;left:-3px;animation:droidFloat 3.3s ease-in-out infinite}
+.assistant-avatar{display:flex;align-items:center;justify-content:center}
+.assistant-avatar .original-astro{height:68px;width:52px;flex:none;animation:droidFloat 3.3s ease-in-out infinite}
+@keyframes republicTurn{to{transform:rotate(360deg)}}
+@keyframes droidFloat{0%,100%{transform:translateY(0) rotate(-1deg)}50%{transform:translateY(-9px) rotate(1deg)}}
+@keyframes domeLook{0%,100%{transform:rotate(0)}35%{transform:rotate(-8deg)}70%{transform:rotate(8deg)}}
+@keyframes eyeBlink{0%,90%,100%{filter:drop-shadow(0 0 6px #54dcff)}94%{filter:drop-shadow(0 0 20px #9efbff)}}
+@keyframes lightBlink{50%{opacity:.2}}
+@keyframes haloBreath{50%{opacity:.5;transform:scaleX(1.09)}}
+@keyframes droidSurprise{0%,100%{transform:translateY(0) rotate(0)}28%{transform:translateY(-22px) rotate(-8deg)}70%{transform:translateY(-7px) rotate(8deg)}}
+@media(max-width:1000px){.hero-astro-zone{right:-25px;opacity:.82;transform:scale(.83);transform-origin:right top}.hero h1{max-width:70%}.hero p{max-width:45%}}
+@media(max-width:650px){.hero{padding-bottom:260px;min-height:650px}.hero h1{max-width:100%}.hero p{max-width:100%}.hero-astro-zone{top:auto;bottom:-85px;right:50%;transform:translateX(50%) scale(.65);opacity:1;transform-origin:center center}.hero-astro-bubble{right:-12px}.hero-footer{gap:12px;font-size:12px}}
+@media(prefers-reduced-motion:reduce){.hero-astro-button,.astro-dome,.astro-eye,.astro-lights circle,.astro-halo,.crest-watermark,.assistant-launcher .assistant-face .original-astro,.assistant-avatar .original-astro{animation:none!important}}
+</style><style>html, body, #root {
+      margin-top: 0; margin-bottom: 0; padding-top: 0; padding-bottom: 0;
+      
+    }
+html,body,#root{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}html,body{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Helvetica Neue,Arial,sans-serif!important}button,input,textarea,select{font-family:inherit}html{background-color:transparent}html.chatgptOled.dark,html.mobileSkybridge.dark{background-color:#000}@supports (font: -apple-system-body){html.mobileSkybridge{font:-apple-system-body}}html.desktopSkybridge.dark{background-color:#1e1e1e}html.transparentSkybridgeBackground,html.transparentSkybridgeBackground.dark{background-color:transparent}html.androidSkybridge,html.androidSkybridge body,html.androidSkybridge *{-webkit-tap-highlight-color:rgba(255,255,255,0)}html.androidSkybridge *::selection,html.androidSkybridge *::-moz-selection{background:#fff0;color:inherit}</style><style></style></head><body data-viewer="true" data-new-gr-c-s-check-loaded="14.1165.0" data-gr-ext-installed="" data-new-gr-c-s-loaded="14.1165.0">
+<div class="topline"></div>
+<div class="shell"><div class="masthead"><div class="brand"><div class="brand-mark" aria-hidden="true"><svg class="republic-crest" viewBox="0 0 100 100" aria-hidden="true"><circle cx="50" cy="50" r="47" fill="none" stroke="currentColor" stroke-width="5"></circle><circle cx="50" cy="50" r="37" fill="none" stroke="currentColor" stroke-width="5" stroke-dasharray="25 4"></circle><g stroke="currentColor" stroke-width="8" stroke-linecap="square"><path d="M50 23V77M23 50H77M31 31L69 69M69 31L31 69"></path></g><circle cx="50" cy="50" r="15" fill="currentColor"></circle></svg></div><span>Republic Supply Depot</span></div><div class="nav"><span class="metadata">Supply Division / 2026</span><span class="live"><span class="dot"></span> System online</span></div></div>
+<header class="hero"><div class="overline">GALACTIC REPUBLIC // PERSONAL SUPPLY DIVISION</div><h1>THE<br>WISH<span>LIST.</span></h1><p>Mission: find the perfect gift. Our slightly overconfident astromech can welcome your family, explain the list, and help them browse gifts like a proper Republic shopping guide.</p><div class="hero-footer"><span>01 / Supply Bay</span><span>Family shopping guide</span><span>Astromech online</span></div><div class="hero-astro-zone"><div class="crest-watermark"><svg class="republic-crest" viewBox="0 0 100 100" aria-hidden="true"><circle cx="50" cy="50" r="47" fill="none" stroke="currentColor" stroke-width="5"></circle><circle cx="50" cy="50" r="37" fill="none" stroke="currentColor" stroke-width="5" stroke-dasharray="25 4"></circle><g stroke="currentColor" stroke-width="8" stroke-linecap="square"><path d="M50 23V77M23 50H77M31 31L69 69M69 31L31 69"></path></g><circle cx="50" cy="50" r="15" fill="currentColor"></circle></svg></div><div class="astro-halo"></div><button type="button" class="hero-astro-button surprised" id="hero-astro" aria-label="Ask the astromech shopping assistant for help"><svg class="original-astro" viewBox="0 0 250 340" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Original animated blue and ivory astromech assistant"><defs><linearGradient id="astro-metal" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#ffffff"></stop><stop offset=".43" stop-color="#dfeaf2"></stop><stop offset=".72" stop-color="#8eacbd"></stop><stop offset="1" stop-color="#435e75"></stop></linearGradient><linearGradient id="astro-blue" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#72deff"></stop><stop offset=".38" stop-color="#2875b8"></stop><stop offset="1" stop-color="#173960"></stop></linearGradient><linearGradient id="astro-head" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#edfaff"></stop><stop offset=".4" stop-color="#86a4bc"></stop><stop offset="1" stop-color="#344b62"></stop></linearGradient><radialGradient id="astro-eye"><stop stop-color="#aeffff"></stop><stop offset=".35" stop-color="#28d6ff"></stop><stop offset=".65" stop-color="#1167a6"></stop><stop offset="1" stop-color="#071725"></stop></radialGradient></defs><ellipse cx="125" cy="321" rx="104" ry="10" fill="#020a11" opacity=".45"></ellipse><g class="astro-body"><path d="M74 123H175L184 271Q124 294 67 271Z" fill="url(#astro-metal)" stroke="#243c54" stroke-width="5"></path><path d="M78 132H171L173 158H77Z" fill="url(#astro-blue)"></path><rect x="87" y="174" width="76" height="78" rx="7" fill="#254a6c" stroke="#b9e8ff" stroke-width="3"></rect><path d="M101 185H149V196H101ZM101 207H149V215H101ZM101 224H149V237H101Z" fill="#7dbcd9"></path><rect x="108" y="262" width="34" height="15" rx="4" fill="#1c3e5c"></rect><g stroke="#235476" stroke-width="3"><path d="M75 160L75 265M174 160L174 265"></path></g><path d="M82 277L169 277L158 294H92Z" fill="#183d60" stroke="#8ac4e9" stroke-width="3"></path></g><g class="astro-leg left"><path d="M74 132L45 137L29 268L61 273L81 167Z" fill="url(#astro-metal)" stroke="#27445a" stroke-width="5"></path><path d="M45 159L68 157L55 250L34 249Z" fill="url(#astro-blue)"></path><path d="M25 259L64 262L70 307L13 307Z" fill="url(#astro-metal)" stroke="#223e53" stroke-width="5"></path><rect x="21" y="289" width="42" height="9" fill="#1b6098"></rect></g><g class="astro-leg right"><path d="M176 132L205 138L221 267L187 273L170 169Z" fill="url(#astro-metal)" stroke="#27445a" stroke-width="5"></path><path d="M183 158L204 162L215 247L193 250Z" fill="url(#astro-blue)"></path><path d="M187 263L224 259L237 307L180 307Z" fill="url(#astro-metal)" stroke="#223e53" stroke-width="5"></path><rect x="188" y="289" width="42" height="9" fill="#1b6098"></rect></g><g class="astro-dome"><path d="M67 128V112A58 58 0 0 1 183 112V128Z" fill="url(#astro-head)" stroke="#263e55" stroke-width="5"></path><path d="M70 102A56 56 0 0 1 181 102" fill="none" stroke="#2786bd" stroke-width="11"></path><path d="M70 119H181" stroke="#2a6698" stroke-width="13"></path><path d="M86 72A55 55 0 0 1 165 72" fill="none" stroke="#fff" opacity=".6" stroke-width="4"></path><circle class="astro-eye" cx="126" cy="87" r="23" fill="url(#astro-eye)" stroke="#122a42" stroke-width="8"></circle><circle cx="120" cy="80" r="5" fill="#e2ffff" opacity=".9"></circle><circle cx="90" cy="110" r="7" fill="#ffab61"></circle><rect x="158" y="104" width="15" height="13" rx="3" fill="#152f47" stroke="#7ccbef" stroke-width="2"></rect><path d="M98 54V37" stroke="#b1d4e9" stroke-width="5"></path><circle cx="98" cy="34" r="5" fill="#83e9ff"></circle></g><g class="astro-lights"><circle cx="154" cy="148" r="5" fill="#70ffce"></circle><circle cx="166" cy="148" r="4" fill="#ffdb74"></circle></g></svg><span class="hero-astro-caption">UNIT R-9 · TAP FOR ASSISTANCE</span></button><div class="hero-astro-bubble" id="hero-astro-bubble" aria-live="polite">Beep boop. Your gift-finding mission begins here.</div></div></header>
+<main class="main">
+<div class="actions"><div class="group"><button class="button primary" id="add">＋ &nbsp; Add Item</button><button class="button" id="export">↗ &nbsp; Export Shareable Site</button></div><div class="group"><button class="button" id="backup">↓ &nbsp; Backup Data</button><button class="button" id="restore">↑ &nbsp; Restore Data</button><input id="restore-file" type="file" accept="application/json,.json" hidden=""></div></div>
+<div id="storage-notice" role="status" hidden="" style="margin:0 0 18px;padding:16px 18px;border:1px solid #e5bb65;background:#362b1c;color:#fff2c7;font-weight:700;line-height:1.6">Your gift was added, but this browser cannot save it permanently. Please use Backup Data before closing this page, and Restore Data when you return.</div><div class="panel-section dashboard"><div class="guide"><div class="label">Mission / 001</div><h2><svg class="republic-crest" viewBox="0 0 100 100" aria-hidden="true"><circle cx="50" cy="50" r="47" fill="none" stroke="currentColor" stroke-width="5"></circle><circle cx="50" cy="50" r="37" fill="none" stroke="currentColor" stroke-width="5" stroke-dasharray="25 4"></circle><g stroke="currentColor" stroke-width="8" stroke-linecap="square"><path d="M50 23V77M23 50H77M31 31L69 69M69 31L31 69"></path></g><circle cx="50" cy="50" r="15" fill="currentColor"></circle></svg> Mission Briefing</h2><p>Add gifts, upload photos, set prices, and share the list with family. The exported family copy is easy to browse and comes with a personal shopping guide.</p></div><div class="stats"><div class="stat"><span class="label">Supplies</span><span class="value" id="stat-count">2</span></div><div class="stat"><span class="label">Divisions</span><span class="value" id="stat-categories">1</span></div><div class="stat"><span class="label">Priority</span><span class="value" id="stat-top">2</span></div></div></div>
+<section aria-label="Wishlist collection"><div class="catalogue-head"><h2>Republic Holo Supply Manifest</h2><small>Operational / Allegedly</small></div><div class="filters"><input id="search" type="search" placeholder="⌕  Search your collection…" aria-label="Search gifts"><select id="category-filter" aria-label="Filter by category"><option value="">All categories</option><option value="Other">Other</option></select><select id="sort" aria-label="Sort gifts"><option value="priority">Highest priority</option><option value="name">Name A–Z</option><option value="low">Price: low to high</option><option value="high">Price: high to low</option><option value="new">Recently added</option></select></div><p class="stats-line" id="stats">2 gifts shown · 2 total</p><div class="grid" id="gifts"></div></section>
+</main><footer><span>Republic Wishlist © 2026</span><span>Personal wishlist / Offline capable</span></footer></div>
+<div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title"><div class="panel"><div class="label">Supply Request / New Entry</div><h2 id="modal-title">Edit Gift</h2><form id="gift-form" novalidate="">
+<div class="field"><label for="gift-name">Item designation *</label><input id="gift-name" maxlength="160" required="" placeholder="e.g. Studio headphones"></div>
+<div class="two"><div class="field"><label for="gift-price">Price (USD)</label><input id="gift-price" type="number" min="0" max="10000000" step="0.01" placeholder="199.99"></div><div class="field"><label for="gift-category">Sector / Category</label><input id="gift-category" list="categories" maxlength="50" placeholder="Technology"><datalist id="categories"><option>Technology</option><option>Fitness</option><option>Gaming</option><option>Clothing</option><option>Home</option><option>Other</option></datalist></div></div>
+<div class="field"><label for="gift-url">Acquisition link</label><input id="gift-url" type="text" inputmode="url" placeholder="https://store.example/product"><small>Paste any shopping link.</small></div>
+<div class="field"><label for="gift-image">Product image URL</label><input id="gift-image" type="text" inputmode="url" placeholder="https://example.com/photo.jpg"><small>Some shops restrict image embedding; uploading is more reliable.</small></div>
+<div class="field"><label for="image-file">Or upload an image</label><label id="upload-label" for="image-file"><input id="image-file" type="file" accept="image/png,image/jpeg,image/webp,image/gif"><small>JPG, PNG, WebP or GIF under 1.5 MB.</small></label><p class="hint" id="photo-note"></p></div>
+<div class="field"><label for="gift-priority">Priority classification</label><select id="gift-priority"><option value="3">Most Wanted</option><option value="2">Really Want</option><option value="1">Nice to Have</option></select></div><div class="field"><label for="gift-desc">Additional intel / notes</label><textarea id="gift-desc" maxlength="500" placeholder="Size, color, model, details…"></textarea></div><p id="save-feedback" role="status" aria-live="polite" style="color:#a5f0ff;font-size:13px;font-weight:700;min-height:20px;margin:8px 0">Saving gift…</p><div class="panel-actions"><button type="button" class="button" id="cancel">Cancel</button><button type="button" class="button primary" id="save-item-button">Save Item</button></div>
+</form></div></div><div class="toast" id="toast" role="status" style="display: none;">Gift saved successfully!</div><script id="initial-data" type="application/json">[{"id":"gift-1794443787622-yaxr20jwjd","name":"Bruce Bolt Batting Gloves","price":"85.00","category":"","url":"https://brucebolt.us/products/copy-of-bruce-bolt-2020-premium-pro-long-cuff-batting-gloves-white?srsltid=AYCX9vJQtkeClHDRYnCgHf18kFo5LD0lpx2yK8uNrEGKlt5KVU66fD8E","image":"https://brucebolt.us/cdn/shop/files/premium-pro-long-cuff-batting-gloves-white-long-cuff-batting-gloves-bruce-bolt-810791.jpg?v=1793399898&width=800","priority":3,"desc":"White","created":1794443787622},{"id":"gift-1794443651600-8q4dvykpvgs","name":"Helldivers Minfigures","price":"20.00","category":"Other","url":"https://republiccustomsstore.com/products/helldivers-b01?srsltid=AYCX9vKKRH0RRUfF7Yokts0XtPYltlJIyPAdCc020cQk4cV0J7_IZ61X","image":"https://republiccustomsstore.com/cdn/shop/files/sdfsdf.png?v=1777865710&width=823","priority":3,"desc":"","created":1794443651600}]</script><button id="assistant-toggle" class="assistant-launcher" aria-label="Open shopping assistant" aria-expanded="false"><span class="assistant-face" aria-hidden="true"><svg class="original-astro" viewBox="0 0 250 340" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Original animated blue and ivory astromech assistant"><defs><linearGradient id="astro-metal" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#ffffff"></stop><stop offset=".43" stop-color="#dfeaf2"></stop><stop offset=".72" stop-color="#8eacbd"></stop><stop offset="1" stop-color="#435e75"></stop></linearGradient><linearGradient id="astro-blue" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#72deff"></stop><stop offset=".38" stop-color="#2875b8"></stop><stop offset="1" stop-color="#173960"></stop></linearGradient><linearGradient id="astro-head" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#edfaff"></stop><stop offset=".4" stop-color="#86a4bc"></stop><stop offset="1" stop-color="#344b62"></stop></linearGradient><radialGradient id="astro-eye"><stop stop-color="#aeffff"></stop><stop offset=".35" stop-color="#28d6ff"></stop><stop offset=".65" stop-color="#1167a6"></stop><stop offset="1" stop-color="#071725"></stop></radialGradient></defs><ellipse cx="125" cy="321" rx="104" ry="10" fill="#020a11" opacity=".45"></ellipse><g class="astro-body"><path d="M74 123H175L184 271Q124 294 67 271Z" fill="url(#astro-metal)" stroke="#243c54" stroke-width="5"></path><path d="M78 132H171L173 158H77Z" fill="url(#astro-blue)"></path><rect x="87" y="174" width="76" height="78" rx="7" fill="#254a6c" stroke="#b9e8ff" stroke-width="3"></rect><path d="M101 185H149V196H101ZM101 207H149V215H101ZM101 224H149V237H101Z" fill="#7dbcd9"></path><rect x="108" y="262" width="34" height="15" rx="4" fill="#1c3e5c"></rect><g stroke="#235476" stroke-width="3"><path d="M75 160L75 265M174 160L174 265"></path></g><path d="M82 277L169 277L158 294H92Z" fill="#183d60" stroke="#8ac4e9" stroke-width="3"></path></g><g class="astro-leg left"><path d="M74 132L45 137L29 268L61 273L81 167Z" fill="url(#astro-metal)" stroke="#27445a" stroke-width="5"></path><path d="M45 159L68 157L55 250L34 249Z" fill="url(#astro-blue)"></path><path d="M25 259L64 262L70 307L13 307Z" fill="url(#astro-metal)" stroke="#223e53" stroke-width="5"></path><rect x="21" y="289" width="42" height="9" fill="#1b6098"></rect></g><g class="astro-leg right"><path d="M176 132L205 138L221 267L187 273L170 169Z" fill="url(#astro-metal)" stroke="#27445a" stroke-width="5"></path><path d="M183 158L204 162L215 247L193 250Z" fill="url(#astro-blue)"></path><path d="M187 263L224 259L237 307L180 307Z" fill="url(#astro-metal)" stroke="#223e53" stroke-width="5"></path><rect x="188" y="289" width="42" height="9" fill="#1b6098"></rect></g><g class="astro-dome"><path d="M67 128V112A58 58 0 0 1 183 112V128Z" fill="url(#astro-head)" stroke="#263e55" stroke-width="5"></path><path d="M70 102A56 56 0 0 1 181 102" fill="none" stroke="#2786bd" stroke-width="11"></path><path d="M70 119H181" stroke="#2a6698" stroke-width="13"></path><path d="M86 72A55 55 0 0 1 165 72" fill="none" stroke="#fff" opacity=".6" stroke-width="4"></path><circle class="astro-eye" cx="126" cy="87" r="23" fill="url(#astro-eye)" stroke="#122a42" stroke-width="8"></circle><circle cx="120" cy="80" r="5" fill="#e2ffff" opacity=".9"></circle><circle cx="90" cy="110" r="7" fill="#ffab61"></circle><rect x="158" y="104" width="15" height="13" rx="3" fill="#152f47" stroke="#7ccbef" stroke-width="2"></rect><path d="M98 54V37" stroke="#b1d4e9" stroke-width="5"></path><circle cx="98" cy="34" r="5" fill="#83e9ff"></circle></g><g class="astro-lights"><circle cx="154" cy="148" r="5" fill="#70ffce"></circle><circle cx="166" cy="148" r="4" fill="#ffdb74"></circle></g></svg></span><span>Ask R-9 for help</span><span class="assist-status"></span></button>
+<section id="assistant-panel" class="assistant-panel" aria-label="astromech shopping assistant">
+<div class="assistant-header"><div class="assistant-identity"><span class="assistant-avatar" aria-hidden="true"><svg class="original-astro" viewBox="0 0 250 340" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Original animated blue and ivory astromech assistant"><defs><linearGradient id="astro-metal" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#ffffff"></stop><stop offset=".43" stop-color="#dfeaf2"></stop><stop offset=".72" stop-color="#8eacbd"></stop><stop offset="1" stop-color="#435e75"></stop></linearGradient><linearGradient id="astro-blue" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#72deff"></stop><stop offset=".38" stop-color="#2875b8"></stop><stop offset="1" stop-color="#173960"></stop></linearGradient><linearGradient id="astro-head" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#edfaff"></stop><stop offset=".4" stop-color="#86a4bc"></stop><stop offset="1" stop-color="#344b62"></stop></linearGradient><radialGradient id="astro-eye"><stop stop-color="#aeffff"></stop><stop offset=".35" stop-color="#28d6ff"></stop><stop offset=".65" stop-color="#1167a6"></stop><stop offset="1" stop-color="#071725"></stop></radialGradient></defs><ellipse cx="125" cy="321" rx="104" ry="10" fill="#020a11" opacity=".45"></ellipse><g class="astro-body"><path d="M74 123H175L184 271Q124 294 67 271Z" fill="url(#astro-metal)" stroke="#243c54" stroke-width="5"></path><path d="M78 132H171L173 158H77Z" fill="url(#astro-blue)"></path><rect x="87" y="174" width="76" height="78" rx="7" fill="#254a6c" stroke="#b9e8ff" stroke-width="3"></rect><path d="M101 185H149V196H101ZM101 207H149V215H101ZM101 224H149V237H101Z" fill="#7dbcd9"></path><rect x="108" y="262" width="34" height="15" rx="4" fill="#1c3e5c"></rect><g stroke="#235476" stroke-width="3"><path d="M75 160L75 265M174 160L174 265"></path></g><path d="M82 277L169 277L158 294H92Z" fill="#183d60" stroke="#8ac4e9" stroke-width="3"></path></g><g class="astro-leg left"><path d="M74 132L45 137L29 268L61 273L81 167Z" fill="url(#astro-metal)" stroke="#27445a" stroke-width="5"></path><path d="M45 159L68 157L55 250L34 249Z" fill="url(#astro-blue)"></path><path d="M25 259L64 262L70 307L13 307Z" fill="url(#astro-metal)" stroke="#223e53" stroke-width="5"></path><rect x="21" y="289" width="42" height="9" fill="#1b6098"></rect></g><g class="astro-leg right"><path d="M176 132L205 138L221 267L187 273L170 169Z" fill="url(#astro-metal)" stroke="#27445a" stroke-width="5"></path><path d="M183 158L204 162L215 247L193 250Z" fill="url(#astro-blue)"></path><path d="M187 263L224 259L237 307L180 307Z" fill="url(#astro-metal)" stroke="#223e53" stroke-width="5"></path><rect x="188" y="289" width="42" height="9" fill="#1b6098"></rect></g><g class="astro-dome"><path d="M67 128V112A58 58 0 0 1 183 112V128Z" fill="url(#astro-head)" stroke="#263e55" stroke-width="5"></path><path d="M70 102A56 56 0 0 1 181 102" fill="none" stroke="#2786bd" stroke-width="11"></path><path d="M70 119H181" stroke="#2a6698" stroke-width="13"></path><path d="M86 72A55 55 0 0 1 165 72" fill="none" stroke="#fff" opacity=".6" stroke-width="4"></path><circle class="astro-eye" cx="126" cy="87" r="23" fill="url(#astro-eye)" stroke="#122a42" stroke-width="8"></circle><circle cx="120" cy="80" r="5" fill="#e2ffff" opacity=".9"></circle><circle cx="90" cy="110" r="7" fill="#ffab61"></circle><rect x="158" y="104" width="15" height="13" rx="3" fill="#152f47" stroke="#7ccbef" stroke-width="2"></rect><path d="M98 54V37" stroke="#b1d4e9" stroke-width="5"></path><circle cx="98" cy="34" r="5" fill="#83e9ff"></circle></g><g class="astro-lights"><circle cx="154" cy="148" r="5" fill="#70ffce"></circle><circle cx="166" cy="148" r="4" fill="#ffdb74"></circle></g></svg></span><div><strong>R-9 · Gift Navigator</strong><small>Astromech shopping assistant · Ready to help</small></div></div><button id="assistant-close" class="assistant-x" aria-label="Close assistant">×</button></div>
+<div class="assistant-content"><div class="assistant-message" id="assistant-greeting">R-9 will greet your family when they open the exported wishlist.</div><div class="assistant-message answer" id="assistant-answer">I sorted the wishlist with “Most Wanted” at the top. Those are the highest-priority ideas.</div><div class="quick-questions"><button data-help="how">How do I buy a gift?</button><button data-help="favorite">What's most wanted?</button><button data-help="budget">Shop by budget</button><button data-help="duplicate">Avoid duplicates?</button></div></div>
+<form id="assistant-form" class="assistant-form"><input id="assistant-question" aria-label="Ask the shopping assistant" placeholder="Ask about gifts or prices…" maxlength="160" autocomplete="off"><button type="submit" aria-label="Send question">↗</button></form>
+<div class="assistant-disclaimer">Quick on-page guide · No AI account or chat service needed</div>
+</section><script>
+(()=>{'use strict';
+const STORAGE='christmas-wishlist-2026-v1',byId=id=>document.getElementById(id), IS_VIEWER=document.body.dataset.viewer==='true';
+const starting=(()=>{try{return JSON.parse(byId('initial-data').textContent)||[]}catch{return []}})();
+let items=(()=>{try{const saved=localStorage.getItem(STORAGE);return IS_VIEWER ? starting : (saved===null?starting:JSON.parse(saved))}catch{return starting}})();
+if(!Array.isArray(items))items=[];
+let editId=null,originalImage='',tempImage='';
+const money=n=>Number.isFinite(Number(n))&&n!==''&&n!==null?'$'+Number(n).toLocaleString('en-US',{minimumFractionDigits:2,maximumFractionDigits:2}):'Price not set';
+const rank={3:'Most Wanted',2:'Really Want',1:'Nice to Have'};
+const safeURL=str=>{try{str=String(str||'').trim();if(!str)return '';if(!/^https?:\/\//i.test(str))str='https://'+str;const u=new URL(str);return ['https:','http:'].includes(u.protocol)&&u.hostname.includes('.')?u.href:''}catch{return ''}};
+function toast(msg){const n=byId('toast');n.textContent=msg;n.style.display='block';clearTimeout(toast.t);toast.t=setTimeout(()=>n.style.display='none',3500)}
+let storageUnavailable=false;
+function save(){
+ try{localStorage.setItem(STORAGE,JSON.stringify(items));storageUnavailable=false;updateStorageNotice();return true}
+ catch(err){storageUnavailable=true;updateStorageNotice();return true}
+}
+function updateStorageNotice(){
+ let notice=byId('storage-notice');if(!notice)return;
+ notice.hidden=!storageUnavailable;
+ notice.textContent='Your gift was added, but this browser cannot save it permanently. Please use Backup Data before closing this page, and Restore Data when you return.';
+}
+function node(tag,cls,txt){const el=document.createElement(tag);if(cls)el.className=cls;if(txt!==undefined)el.textContent=txt;return el}
+function updateSummary(){
+  const categories=new Set(items.map(x=>String(x.category||'').trim()).filter(Boolean));
+  byId('stat-count').textContent=String(items.length);
+  byId('stat-categories').textContent=String(categories.size);
+  byId('stat-top').textContent=String(items.filter(x=>Number(x.priority)===3).length);
+}
+function render(){
+ updateStorageNotice();
+ const currentCategory=byId('category-filter').value;
+ const q=byId('search').value.trim().toLowerCase(),sort=byId('sort').value;
+ const cats=[...new Set(items.map(x=>x.category).filter(Boolean))].sort((a,b)=>a.localeCompare(b));
+ byId('category-filter').replaceChildren(new Option('All categories',''),...cats.map(c=>new Option(c,c)));
+ byId('category-filter').value=cats.includes(currentCategory)?currentCategory:'';
+ const filtered=items.filter(x=>(!q||[x.name,x.category,x.desc].some(y=>String(y||'').toLowerCase().includes(q)))&&(!byId('category-filter').value||x.category===byId('category-filter').value));
+ filtered.sort((a,b)=>sort==='name'?a.name.localeCompare(b.name):sort==='low'?(Number(a.price)||Infinity)-(Number(b.price)||Infinity):sort==='high'?(Number(b.price)||0)-(Number(a.price)||0):sort==='new'?(b.created||0)-(a.created||0):Number(b.priority||0)-Number(a.priority||0)||(b.created||0)-(a.created||0));
+ byId('stats').textContent=`${filtered.length} gift${filtered.length===1?'':'s'} shown · ${items.length} total`;
+ updateSummary();
+ const root=byId('gifts');root.replaceChildren();
+ if(!filtered.length){
+   const empty=node('div','empty');
+   empty.style.gridColumn='1/-1';
+   empty.append(node('div','icon','◇'),node('h2','',items.length?'Nothing matches that filter':'Your collection awaits.'),node('p','',items.length?'Try another search or category filter, or add a new gift.':'Add your first item. Catalogue its image, price and acquisition link.'));
+   if(!IS_VIEWER){const btn=node('button','button primary','＋ Add a Gift');btn.onclick=openAdd;empty.append(btn);}
+   root.append(empty);
+   return;
+ }
+ for(const [index,gift] of filtered.entries()){
+   const card=node('article','gift'),photo=node('div','photo');card.style.setProperty('--i',index);
+   if(gift.image&&((gift.image.startsWith('data:image/'))||safeURL(gift.image))){
+     const img=node('img');img.src=gift.image;img.alt=gift.name;img.loading='lazy';
+     img.onerror=()=>{photo.replaceChildren(node('span','placeholder','◇'),node('span','tag',rank[gift.priority]||rank[1]))};
+     photo.append(img);
+   }else photo.append(node('span','placeholder','◇'));
+   photo.append(node('span','tag',rank[gift.priority]||rank[1]));
+   const body=node('div','gift-body');body.append(node('div','item-id','ITEM / '+String(index+1).padStart(3,'0')));
+   body.append(node('h3','',gift.name),node('div','price',money(gift.price)));
+   if(gift.category)body.append(node('div','meta',gift.category));
+   if(gift.desc)body.append(node('p','description',gift.desc));
+   const actions=node('div','gift-actions');
+   if(safeURL(gift.url)){
+     const link=node('a','button dark','View Gift');
+     link.href=safeURL(gift.url);link.target='_blank';link.rel='noopener noreferrer';
+     actions.append(link);
+   }
+   if(!IS_VIEWER){const edit=node('button','button','Edit');
+   edit.onclick=()=>openEdit(gift.id);
+   actions.append(edit);
+   const del=node('button','button ghost','Delete');
+   del.title='Delete gift';
+   del.setAttribute('aria-label','Delete '+gift.name);
+   del.onclick=()=>{if(confirm(`Remove “${gift.name}” from your list?`)){items=items.filter(x=>x.id!==gift.id);save();render();assistantMessage('That item has been removed from your list.')}};
+   actions.append(del);}
+   body.append(actions);card.append(photo,body);root.append(card);
+ }
+}
+function openAdd(){editId=null;originalImage='';tempImage='';byId('gift-form').reset();byId('image-file').value='';byId('modal-title').textContent='Add a Gift';byId('save-feedback').textContent='';byId('photo-note').textContent='';byId('modal').classList.add('open');byId('gift-name').focus()}
+function openEdit(id){
+ const g=items.find(x=>x.id===id);if(!g)return;editId=id;originalImage=g.image||'';tempImage='';byId('gift-form').reset();byId('image-file').value='';
+ byId('modal-title').textContent='Edit Gift';byId('save-feedback').textContent='';
+ for(const [key,value]of Object.entries({name:g.name,price:g.price,category:g.category,url:g.url,priority:g.priority,desc:g.desc})){
+   byId('gift-'+key).value=value??'';
+ }
+ byId('gift-image').value=g.image&&g.image.startsWith('data:')?'':g.image||'';
+ byId('photo-note').textContent=originalImage.startsWith('data:')?'Uploaded picture saved. Upload another one to replace it.':'';
+ byId('modal').classList.add('open');
+}
+function close(){byId('modal').classList.remove('open')}
+byId('add').onclick=openAdd;byId('cancel').onclick=close;byId('modal').addEventListener('click',e=>{if(e.target===byId('modal'))close()});document.addEventListener('keydown',e=>{if(e.key==='Escape')close()});
+byId('image-file').addEventListener('change',e=>{
+ const file=e.target.files?.[0];if(!file){tempImage='';return}
+ if(!['image/png','image/jpeg','image/webp','image/gif'].includes(file.type)){toast('Use a JPG, PNG, WebP, or GIF image.');return}
+ if(file.size>1500000){toast('Please choose an image smaller than 1.5 MB.');e.target.value='';return}
+ const reader=new FileReader();
+ reader.onload=()=>{tempImage=String(reader.result);byId('photo-note').textContent=`Picture ready: ${file.name}`};
+ reader.readAsDataURL(file);
+});
+function saveGiftNow(){
+ const feedback=byId('save-feedback');feedback.textContent='Saving gift…';
+ const name=byId('gift-name').value.trim();if(!name){feedback.textContent='Enter a gift name first.';byId('gift-name').focus();return;}
+ const rawLink=byId('gift-url').value.trim(),rawImage=byId('gift-image').value.trim();
+ if(rawLink&&!safeURL(rawLink)){feedback.textContent='Check the shopping link or leave it blank.';byId('gift-url').focus();return;}
+ if(rawImage&&!safeURL(rawImage)&&!tempImage){feedback.textContent='Check the picture link, upload a photo, or leave it blank.';byId('gift-image').focus();return;}
+ const image=tempImage||safeURL(rawImage)||((!rawImage)?originalImage:'');
+ const g={
+   id:editId||('gift-'+Date.now()+'-'+Math.random().toString(36).slice(2)),
+   name,
+   price:byId('gift-price').value.trim(),
+   category:byId('gift-category').value.trim(),
+   url:safeURL(rawLink),
+   image,
+   priority:Number(byId('gift-priority').value),
+   desc:byId('gift-desc').value.trim(),
+   created:editId?(items.find(x=>x.id===editId)?.created||Date.now()):Date.now()
+ };
+ if(editId)items=items.map(x=>x.id===editId?g:x); else items.unshift(g);
+ save();close();render();toast(storageUnavailable?'Gift added! Download a Backup Data file before closing.':'Gift saved successfully!');
+}
+byId('save-item-button').addEventListener('click',()=>{try{saveGiftNow()}catch(error){console.error('Wishlist save error',error);byId('save-feedback').textContent='Could not save: '+String(error.message||error)}});
+byId('gift-form').addEventListener('submit',e=>{e.preventDefault();byId('save-item-button').click()});
+for(const id of ['search','category-filter','sort'])byId(id).addEventListener('input',render);
+function download(filename,data,type){const blob=new Blob([data],{type});const url=URL.createObjectURL(blob);const a=node('a');a.href=url;a.download=filename;document.body.append(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),1000)}
+byId('backup').onclick=()=>download('republic-wishlist-backup.json',JSON.stringify(items,null,2),'application/json');
+byId('restore').onclick=()=>byId('restore-file').click();
+byId('restore-file').onchange=async e=>{
+ const file=e.target.files?.[0];if(!file)return;
+ try{
+   const parsed=JSON.parse(await file.text());
+   if(!Array.isArray(parsed)||!parsed.every(x=>x&&typeof x.name==='string'))throw Error('Invalid format');
+   if(!confirm(`Restore ${parsed.length} gifts? This replaces the list currently in this browser.`))return;
+   items=parsed;save();render();toast(storageUnavailable?'List restored for this session; download a Backup Data file.':'List restored!');
+ }catch{toast('Could not read that wishlist JSON backup.')}finally{e.target.value=''}
+};
+byId('export').onclick=()=>{
+ const doc=document.documentElement.cloneNode(true);
+ const embedded=doc.querySelector('#initial-data');
+ embedded.textContent=JSON.stringify(items).replace(/</g,'\\u003c');
+ doc.querySelector('#gifts').replaceChildren();
+ doc.querySelector('#modal').classList.remove('open');
+ doc.querySelector('#toast').style.display='none';
+ doc.querySelector('#search').value='';
+ doc.querySelector('body').dataset.viewer='true';
+ doc.querySelector('#assistant-panel').classList.remove('open');
+ const html='<!DOCTYPE html>\n'+doc.outerHTML;
+ download('republic-wishlist-for-family.html',html,'text/html');
+ toast('Shareable website downloaded. It includes your current gifts!');
+};
+
+const assistPanel=byId('assistant-panel'),assistAnswer=byId('assistant-answer'),assistInput=byId('assistant-question');
+function assistantMessage(message){assistAnswer.textContent=message;assistPanel.classList.add('open');byId('assistant-toggle').setAttribute('aria-expanded','true')}
+function assistantToggle(force){const open=force===undefined?!assistPanel.classList.contains('open'):force;assistPanel.classList.toggle('open',open);byId('assistant-toggle').setAttribute('aria-expanded',String(open));if(open)assistInput.focus()}
+byId('assistant-toggle').onclick=()=>assistantToggle();
+byId('hero-astro').onclick=()=>{
+ const hero=byId('hero-astro');hero.classList.remove('surprised');void hero.offsetWidth;hero.classList.add('surprised');
+ const lines=['Beep boop. Your gift-finding mission begins here.','Whirr! I can help your family find the most wanted gifts.','Bweep! Click View Gift to reach the store.','Boop. I have calculated a 97% chance someone wants socks.'];
+ const bubble=byId('hero-astro-bubble');bubble.textContent=lines[Math.floor(Math.random()*lines.length)];
+ assistantToggle(true);
+};
+byId('assistant-close').onclick=()=>assistantToggle(false);
+function sayFor(action){
+ if(action==='how'){assistantMessage('Browse the gift cards below. Each card shows a price, priority, and any notes. Choose “View Gift” to open the store in a new tab, then buy it directly from that store. This site does not process payments.');}
+ else if(action==='favorite'){byId('sort').value='priority';byId('category-filter').value='';byId('search').value='';render();assistantMessage('I sorted the wishlist with “Most Wanted” at the top. Those are the highest-priority ideas.');document.querySelector('.catalogue-head').scrollIntoView({behavior:'smooth',block:'start'});}
+ else if(action==='budget'){assistantMessage('Type your budget below, for example “under $50” or “less than 100”. I’ll tell you which listed gifts fit your price range.');assistInput.focus()}
+ else if(action==='duplicate'){assistantMessage('This wishlist cannot track purchases or prevent duplicates. Please coordinate with other family members before buying something. Prices and stock can also change at the retailer.');}
+ else if(action==='link'){assistantMessage('Click “View Gift” on any item to visit its shopping page. If a gift has no View Gift button, the list owner has not added a shopping link yet.');}
+}
+document.querySelectorAll('[data-help]').forEach(b=>b.addEventListener('click',()=>sayFor(b.dataset.help)));
+function answerQuestion(query){
+ const q=query.toLowerCase().trim();if(!q)return;
+ const m=q.match(/(?:under|below|less than|up to|max|budget|\$)\s*\$?\s*(\d+(?:\.\d{1,2})?)/);
+ if(m){const max=Number(m[1]);const matches=items.filter(x=>x.price!==''&&x.price!==null&&Number.isFinite(Number(x.price))&&Number(x.price)<=max).sort((a,b)=>Number(a.price)-Number(b.price));assistantMessage(matches.length?`There are ${matches.length} gift(s) at $${max} or less: ${matches.slice(0,5).map(x=>x.name+' ('+money(x.price)+')').join('; ')}${matches.length>5?'; and more.':''} Prices may change at the store.`:`I don’t see any gifts listed at $${max} or less yet.`);return}
+ if(/most wanted|favorite|priority|top|best|important/.test(q)){sayFor('favorite');return}
+ if(/buy|order|purchase|shop|link|where/.test(q)){sayFor('link');return}
+ if(/already|duplicate|claimed|reserved|purchased/.test(q)){sayFor('duplicate');return}
+ if(/how|help|use|work/.test(q)){sayFor('how');return}
+ if(/price|cost|budget|cheap|afford/.test(q)){sayFor('budget');return}
+ if(/hi|hello|hey/.test(q)){assistantMessage('Hello! I’m your wishlist shopping guide. Ask me how to shop, what is most wanted, or what fits your budget.');return}
+ const matches=items.filter(x=>[x.name,x.category,x.desc].some(v=>String(v||'').toLowerCase().includes(q)));
+ if(matches.length){assistantMessage(`I found ${matches.length} possible match(es): ${matches.slice(0,4).map(x=>x.name+' — '+money(x.price)).join('; ')}. Use the search box on the page to narrow the cards.`);return}
+ assistantMessage('I can help with gift prices, the most-wanted items, where to buy gifts, and avoiding duplicate purchases. Try “under $50” or choose one of the quick questions.');
+}
+byId('assistant-form').onsubmit=e=>{e.preventDefault();answerQuestion(assistInput.value);assistInput.value=''};
+if(IS_VIEWER){byId('assistant-greeting').textContent='Beep-beep! I’m R-9, the family shopping copilot. I can help your family browse gifts, spot the most wanted items, and follow shopping links.';setTimeout(()=>{byId('hero-astro-bubble').textContent='Beep-beep! Hello gift hunters. I am R-9, your Republic shopping guide.';assistantToggle(true);assistantMessage('Hello there! I’m R-9, your Republic shopping guide. I can help your family find the most wanted gifts, suggest budget-friendly options, and explain how to use the wishlist.');},650)}
+else{byId('assistant-greeting').textContent='R-9 will greet your family when they open the exported wishlist.'}
+render();
+})();
+</script>
+
+<script>globalThis.__codexVisualizationInitialGlobals={"statePersistence":"none","stateModelContext":"none","visualizationStyleVariables":{"--accent":"rgb(19, 52, 99)","--accent-foreground":"rgb(44, 103, 197)","--background":"rgb(0, 0, 0)","--border":"rgba(255, 255, 255, 0.15)","--border-strong":"rgba(255, 255, 255, 0.2)","--card":"color-mix(in oklab, rgb(237, 237, 237) 5%, transparent)","--card-foreground":"rgb(237, 237, 237)","--corner-shape":"round","--control-spacing":"12px","--cursor-interaction":"pointer","--destructive":"rgb(226, 85, 7)","--font-mono":"ui-monospace, SFMono-Regular, \"SF Mono\", menlo, consolas, \"Liberation Mono\", monospace","--font-sans":"-apple-system-body, ui-sans-serif, -apple-system, system-ui, \"Segoe UI\", Helvetica, \"Apple Color Emoji\", Arial, sans-serif, \"Segoe UI Emoji\", \"Segoe UI Symbol\"","--font-size-base":"16px","--font-weight-normal":"400","--foreground":"rgb(237, 237, 237)","--input":"rgba(255, 255, 255, 0.2)","--muted":"color-mix(in srgb, rgb(237, 237, 237) 10%, transparent)","--muted-foreground":"rgb(175, 175, 175)","--popover":"rgb(48, 48, 48)","--popover-foreground":"rgb(237, 237, 237)","--primary":"rgb(44, 103, 197)","--primary-foreground":"rgb(13, 13, 13)","--radius":"8px","--radius-2xl":"16px","--radius-lg":"8px","--radius-md":"6px","--radius-sm":"4px","--ring":"rgb(2, 133, 255)","--secondary":"rgb(48, 48, 48)","--secondary-foreground":"rgb(237, 237, 237)","--blue":"rgb(2, 133, 255)","--orange":"rgb(251, 106, 34)","--green":"rgb(4, 184, 76)","--red":"rgb(250, 66, 62)","--purple":"rgb(146, 79, 247)","--yellow":"rgb(255, 195, 0)","--visualize-paint-gutter":"0px","--viz-series-1":"rgb(44, 103, 197)","--viz-series-2":"#f6d459","--viz-series-3":"#f28ec0","--viz-series-4":"#54ccc2","--viz-series-5":"#71d689","--viz-series-6":"#f79951"},"visualizationTheme":"dark"};</script>
+<style id="codex-visualization-host-theme">
+:root {}
+html[data-visualize-page-inline-inset] > body { padding-inline: var(--page-content-inline-inset); }
+</style>
+<script>
+(() => {
+  // Host colors are defaults; later authored styles can give the same names
+  // their own meaning (for example, --muted as a chart's label color).
+  const hostStyles = document.getElementById("codex-visualization-host-theme");
+  const hostStyle = hostStyles.sheet.cssRules[0].style;
+  // Typography, geometry and interaction cursors still follow the host.
+  const styleForProperty = (property) =>
+    /^--(?:font-|radius|corner-shape$|control-spacing$|cursor-interaction$|icon-size$|page-content-inline-inset$|page-header-clearance$|visualize-paint-gutter$)/.test(property)
+      ? document.documentElement.style
+      : hostStyle;
+  const initialGlobals =
+    globalThis.__codexVisualizationInitialGlobals ?? globalThis.openai;
+  delete globalThis.__codexVisualizationInitialGlobals;
+  if (initialGlobals?.statePersistence != null) {
+    globalThis.openai ??= {};
+    globalThis.openai.statePersistence = initialGlobals.statePersistence;
+    globalThis.openai.stateModelContext = initialGlobals.stateModelContext ?? "none";
+  }
+  if (!false) {
+    return;
+  }
+  let appliedProperties = [];
+  const applyHostStyleVariables = (styleVariables) => {
+    if (styleVariables == null || typeof styleVariables !== "object") {
+      return;
+    }
+    document.documentElement.toggleAttribute(
+      "data-visualize-page-inline-inset", typeof styleVariables["--page-content-inline-inset"] === "string",
+    );
+    document.documentElement.toggleAttribute(
+      "data-visualize-page-header", typeof styleVariables["--page-header-clearance"] === "string",
+    );
+    for (const property of appliedProperties) {
+      styleForProperty(property).removeProperty(property);
+    }
+    appliedProperties = [];
+    for (const [property, value] of Object.entries(styleVariables)) {
+      if (property.startsWith("--") && typeof value === "string") {
+        styleForProperty(property).setProperty(property, value);
+        appliedProperties.push(property);
+      }
+    }
+  };
+
+  const syncHostStyles = (globals) => {
+    applyHostStyleVariables(globals?.visualizationStyleVariables);
+    const sandboxDocument = globalThis.frameElement?.ownerDocument;
+    if (sandboxDocument != null && globals?.visualizationTheme != null) {
+      let colorSchemeMeta = sandboxDocument.querySelector(
+        'meta[name="color-scheme"]',
+      );
+      if (colorSchemeMeta == null) {
+        colorSchemeMeta = sandboxDocument.createElement("meta");
+        colorSchemeMeta.name = "color-scheme";
+        sandboxDocument.head.appendChild(colorSchemeMeta);
+      }
+      colorSchemeMeta.content = globals.visualizationTheme;
+      sandboxDocument.documentElement.style.colorScheme =
+        globals.visualizationTheme;
+      // Paint the host surface behind transparent saved visualization documents.
+      sandboxDocument.documentElement.style.backgroundColor =
+        hostStyle.getPropertyValue("--background");
+    }
+  };
+
+  syncHostStyles(initialGlobals);
+  globalThis.addEventListener("openai:set_globals", (event) => {
+    syncHostStyles(event.detail?.globals);
+  });
+})();
+</script>
+
+
+
+
+<script>
+(() => {
+  const reportEnvironmentError = (value) => {
+    const error = value instanceof Error ? value : new Error(String(value));
+    void globalThis.openai
+      .callTool(
+        "__codex_inline_visualization_error__",
+        {
+          message: error.message,
+          name: error.name,
+          stack: error.stack,
+        },
+      )
+      .catch(() => {});
+  };
+
+  globalThis.addEventListener("error", (event) => {
+    if (event.target?.localName === "script") {
+      // A script's own onerror may render a fallback or load an alternative.
+      // Let that handler run; failures it throws still reach the global error path.
+      const handlesError = typeof event.target.onerror === "function";
+      globalThis.queueMicrotask(() => {
+        if (!handlesError && !event.defaultPrevented) {
+          reportEnvironmentError("Visualization script could not be loaded");
+        }
+      });
+    } else if (event.target === globalThis) {
+      // The browser defers resize notifications to another frame; no script threw.
+      if (event.error == null && (
+        event.message === "ResizeObserver loop completed with undelivered notifications." ||
+        event.message === "ResizeObserver loop limit exceeded"
+      )) {
+        return;
+      }
+      reportEnvironmentError(event.error ?? event.message);
+    }
+  }, true);
+  globalThis.addEventListener("unhandledrejection", (event) => {
+    reportEnvironmentError(event.reason);
+  });
+})();
+</script>
+<script id="codex-visualization-variants">
+(() => {
+  let previousSnapshot = "[]";
+  let roots = [];
+  const report = () => {
+    roots = Array.from(
+      document.querySelectorAll(".viz-carousel[data-active-variant]"),
+    ).slice(0, 32);
+    const selectedVariants = roots.flatMap((root, carousel) => {
+      const variant = root.dataset.activeVariant;
+      const label = root.getAttribute("aria-label")?.slice(0, 256);
+      return variant ? [{
+        carousel,
+        ...(label == null ? {} : { label }),
+        variant: variant.slice(0, 256),
+      }] : [];
+    });
+    const snapshot = JSON.stringify(selectedVariants);
+    if (snapshot !== previousSnapshot) {
+      previousSnapshot = snapshot;
+      void globalThis.openai.callTool("__codex_visualization_annotations__", {
+        type: "variants",
+        selectedVariants,
+      }).catch(() => {});
+    }
+  };
+  const observer = new MutationObserver((records) => {
+    if (records.some((record) => record.type === "attributes") || roots.some((root) => !root.isConnected)) {
+      report();
+    }
+  });
+  observer.observe(document, {
+    childList: true,
+    subtree: true,
+    attributes: true,
+    attributeFilter: ["data-active-variant"],
+  });
+  report();
+  globalThis.addEventListener("pagehide", () => observer.disconnect(), { once: true });
+})();
+</script>
+<script>
+(() => {
+  const selectorInRoot = (target, root) => {
+    const parts = [];
+    for (let element = target; element != null && parts.length < 64; element = element.parentElement) {
+      const id = element.id && globalThis.CSS?.escape?.(element.id);
+      if (id && id.length <= 256) {
+        const selector = ["#" + id, ...parts].join(" > ");
+        const matches = root.querySelectorAll(selector);
+        if (matches.length === 1 && matches[0] === target) {
+          return selector;
+        }
+      }
+      let index = 1;
+      for (let sibling = element.previousElementSibling; sibling != null; sibling = sibling.previousElementSibling) {
+        if (sibling.localName === element.localName) { index += 1; }
+      }
+      const tag = globalThis.CSS?.escape?.(element.localName) ?? element.localName;
+      parts.unshift(tag + ":nth-of-type(" + index + ")");
+      if (parts.join(" > ").length > 1024) { return null; }
+      if (element.parentElement == null) {
+        const selector = parts.join(" > ");
+        const matches = root.querySelectorAll(selector);
+        return matches.length === 1 && matches[0] === target ? selector : null;
+      }
+    }
+    return null;
+  };
+  const describeTarget = (element) => {
+    if (element == null || !element.isConnected) { return undefined; }
+    const tagName = element.localName.toLowerCase();
+    if (!/^[a-z][a-z0-9-]{0,63}$/.test(tagName)) { return undefined; }
+    const parts = [];
+    let current = element;
+    for (let depth = 0; depth < 16; depth += 1) {
+      const root = current.getRootNode();
+      const selector = selectorInRoot(current, root);
+      if (selector == null) { return undefined; }
+      parts.unshift(selector);
+      if (root === document) {
+        const selector = parts.length === 1 ? parts[0] : "shadow:" + parts.join(">>>");
+        if (selector.length > 1024) { return undefined; }
+        const label = (element.getAttribute("aria-label") || element.getAttribute("title") || "")
+          .replace(/[\u0000-\u001f\u007f-\u009f\u061c\u200e\u200f\u2028-\u202e\u2066-\u2069]/gu, " ")
+          .replace(/\s+/g, " ").trim().slice(0, 160);
+        return { selector, tagName, ...(label ? { label } : {}) };
+      }
+      if (!(root instanceof ShadowRoot) || root.mode !== "open") { return undefined; }
+      current = root.host;
+    }
+    return undefined;
+  };
+  let previousSnapshot = JSON.stringify({ isHovering: false });
+  const reportHover = (event, isHovering, isTouch = false, target) => {
+    const report = isTouch
+      ? { isHovering: false, pointerType: "touch" }
+      : { isHovering, ...(isHovering && target != null ? { target } : {}) };
+    const snapshot = JSON.stringify(report);
+    if (snapshot === previousSnapshot) {
+      return;
+    }
+    previousSnapshot = snapshot;
+    void globalThis.openai
+      .callTool(
+        "__codex_inline_visualization_hover__",
+        { ...report, eventTime: globalThis.performance.timeOrigin + event.timeStamp },
+      )
+      .catch(() => {});
+  };
+
+  let hoveredElement;
+  let isTouchHover = false;
+  let latestHover = null;
+  let latestResetTime = 0;
+  const handlePointerHover = (event) => {
+    const isTouch = event.pointerType === "touch";
+    const element = isTouch ? undefined : event.composedPath().find((element) => element instanceof Element);
+    latestHover = { event, element, isTouch };
+    if (event.type === "pointermove" && element === hoveredElement && isTouch === isTouchHover) {
+      return;
+    }
+    hoveredElement = element;
+    isTouchHover = isTouch;
+    reportHover(event, !isTouch, isTouch, isTouch ? undefined : describeTarget(element));
+  };
+  const clearHover = (event) => {
+    hoveredElement = undefined;
+    isTouchHover = false;
+    latestHover = null;
+    reportHover(event, false);
+  };
+  globalThis.addEventListener("openai:set_globals", (event) => {
+    const resetTime = event.detail?.globals?.visualizationHoverReset;
+    if (typeof resetTime !== "number" || !Number.isFinite(resetTime) || resetTime <= latestResetTime) {
+      return;
+    }
+    latestResetTime = resetTime;
+    const latest = latestHover;
+    hoveredElement = undefined;
+    isTouchHover = false;
+    latestHover = null;
+    previousSnapshot = JSON.stringify({ isHovering: false });
+    // A host-observed exit can arrive after the pointer has already reentered.
+    if (latest != null && globalThis.performance.timeOrigin + latest.event.timeStamp > resetTime) {
+      latestHover = latest;
+      hoveredElement = latest.element;
+      isTouchHover = latest.isTouch;
+      reportHover(latest.event, !latest.isTouch, latest.isTouch,
+        latest.isTouch ? undefined : describeTarget(latest.element));
+    }
+  });
+  globalThis.addEventListener("pointerover", handlePointerHover, { capture: true });
+  // Moves between descendants in one shadow root do not emit pointerover outside
+  // that root. The identity guard avoids selector work while a target is unchanged.
+  globalThis.addEventListener("pointermove", handlePointerHover, { capture: true });
+  globalThis.addEventListener(
+    "pointerout",
+    (event) => {
+      if (event.pointerType !== "touch" && event.relatedTarget == null) {
+        clearHover(event);
+      }
+    },
+    { capture: true },
+  );
+  globalThis.addEventListener("pagehide", clearHover);
+})();
+</script>
+<script>
+(() => {
+  const report = (method) => {
+    void globalThis.openai.callTool("__codex_inline_visualization_input__", { method }).catch(() => {});
+  };
+  globalThis.addEventListener("pointerdown", () => report("pointer"), { capture: true });
+  globalThis.addEventListener("keydown", (event) => {
+    if (!event.isComposing && event.key !== "Shift" && !event.altKey && !event.ctrlKey && !event.metaKey) {
+      report(["Tab","ArrowLeft","ArrowRight","ArrowUp","ArrowDown"].includes(event.key) ? "keyboard-navigation" : "keyboard");
+    }
+  }, { capture: true });
+})();
+</script>
+<script>
+(() => {
+  const bubbledClicks = new WeakSet();
+  const interactiveSelector = [
+    "button", "input", "select", "textarea", "label", "summary", "a[href]",
+    "audio[controls]", "video[controls]", "[onclick]", "[data-visualization-interactive]",
+    '[contenteditable]:not([contenteditable="false"])',
+    ...[
+      "button", "checkbox", "combobox", "gridcell", "link", "listbox",
+      "menuitem", "menuitemcheckbox", "menuitemradio", "option", "radio",
+      "scrollbar", "searchbox", "slider", "spinbutton", "switch", "tab",
+      "textbox", "treeitem",
+    ].map((role) => '[role~="' + role + '"]'),
+  ].join(",");
+
+  globalThis.addEventListener("click", (event) => bubbledClicks.add(event));
+  globalThis.addEventListener("click", (event) => {
+    // Capture the path before a control can remove itself. Custom delegated
+    // controls can opt in with data-visualization-interactive.
+    const elements = event.composedPath().filter((target) => target instanceof Element);
+    const control = elements.find((element) => element.matches(interactiveSelector));
+    const widgetControl = event.isTrusted && control != null &&
+      !control.matches('img, [role~="img"]') &&
+      !elements.some((element) => element.matches('a[href], [role~="link"]'));
+    const isInteractiveTarget = control != null || elements.some((element) =>
+      element.hasAttribute("tabindex") && element.tabIndex >= 0) ||
+      (elements[0] != null && getComputedStyle(elements[0]).cursor === "pointer");
+    // Use a task, not a microtask: native dispatch can run microtasks between
+    // listeners. Propagation flags are reset when dispatch finishes:
+    // https://dom.spec.whatwg.org/#concept-event-dispatch
+    globalThis.setTimeout(() => {
+      void globalThis.openai.callTool("__codex_inline_visualization_click__", {
+        ...(widgetControl ? {widgetControl: true} : {}),
+        isInteractive: isInteractiveTarget || event.defaultPrevented ||
+          (event.bubbles && !bubbledClicks.has(event)),
+      }).catch(() => {});
+    }, 0);
+  }, { capture: true });
+})();
+</script>
+<script>
+(() => {
+  globalThis.addEventListener("keydown", (event) => {
+    if (event.isComposing || event.altKey || event.ctrlKey || event.metaKey ||
+      event.shiftKey || !["ArrowLeft", "ArrowRight", "Escape"].includes(event.key)) {
+      return;
+    }
+    const target = event.composedPath().find((element) => element instanceof HTMLElement);
+    const editable = target?.closest("[contenteditable]");
+    const editing = target && (target.isContentEditable ||
+      (editable && editable.getAttribute("contenteditable") !== "false") ||
+      target.closest('input, textarea, select, [role="slider"], [role="spinbutton"], [role="combobox"], [role="listbox"], [role="grid"], [role="tree"], [role="tablist"], [role="menu"]'));
+    if (event.key !== "Escape" && editing) { return; }
+    // Let the widget handle the key before forwarding it across the sandbox.
+    globalThis.setTimeout(() => {
+      if (!event.defaultPrevented && globalThis.openai?.displayMode === "fullscreen") {
+        void globalThis.openai.callTool("__codex_inline_visualization_preview_key__", {
+          key: event.key,
+        }).catch(() => {});
+      }
+    }, 0);
+  });
+})();
+</script>
+
+
+
+
+
+
+
+<script>
+(() => {
+  const contentRange = document.createRange();
+  let waitingForStreamRoot = false ? document.querySelector("main") : null;
+  const markStreamReady = () => {
+    waitingForStreamRoot = null;
+    globalThis.removeEventListener("openai:set_globals", onStreamGlobals);
+    void globalThis.openai.callTool("__codex_inline_visualization_ready__", {}).catch(() => {});
+  };
+  const onStreamGlobals = (event) => {
+    const update = event.detail?.globals?.__appBlockStream;
+    if (update?.isFinal) {
+      markStreamReady();
+    } else if (update != null) {
+      scheduleHeightReport();
+    }
+  };
+  let previousMeasurement = null;
+  let heightReportTimer = null;
+  const reportHeight = () => {
+    const bodyChildren = Array.from(document.body.children).filter(
+      (element) =>
+        element.tagName !== "SCRIPT" &&
+        element.tagName !== "STYLE" &&
+        element.getAttribute("role") !== "tooltip",
+    );
+    const bodyStyle = globalThis.getComputedStyle(document.body);
+    const contentWidth = Math.max(
+      0,
+      Math.round(
+        globalThis.innerWidth -
+          parseFloat(bodyStyle.paddingLeft) -
+          parseFloat(bodyStyle.paddingRight),
+      ),
+    );
+    let contentHeight;
+    if (bodyChildren.length === 0) {
+      contentRange.selectNodeContents(document.body);
+      contentHeight = contentRange.getBoundingClientRect().height;
+    } else if (bodyChildren.length === 1) {
+      const [bodyChild] = bodyChildren;
+      const childRect = bodyChild.getBoundingClientRect();
+      // Child margins can collapse above the root without adding to its height.
+      // The host adds body padding separately.
+      contentHeight =
+        Math.max(bodyChild.scrollHeight, childRect.height) +
+        Math.max(
+          0,
+          childRect.top -
+            document.body.getBoundingClientRect().top -
+            parseFloat(bodyStyle.paddingTop),
+        );
+    } else {
+      const bodyTop = document.body.getBoundingClientRect().top;
+      contentHeight = Math.max(
+        ...bodyChildren.map(
+          (bodyChild) => bodyChild.getBoundingClientRect().bottom - bodyTop,
+        ),
+      );
+    }
+    // A short first line is drawable before the chart is tall enough for a graphical preview.
+    // Check before deduplicating height: text can arrive inside a fixed-height empty box.
+    if (waitingForStreamRoot != null && contentWidth > 0 && (
+      contentHeight >= 32 ||
+      (contentHeight > 0 && waitingForStreamRoot.innerText.trim() !== "")
+    )) {
+      markStreamReady();
+    }
+    const viewportHeight = globalThis.innerHeight;
+    const previous = previousMeasurement;
+    previousMeasurement = { contentHeight, contentWidth, viewportHeight };
+    if (
+      previous != null &&
+      contentWidth === previous.contentWidth &&
+      contentHeight - previous.contentHeight ===
+        viewportHeight - previous.viewportHeight
+    ) {
+      return;
+    }
+
+    void globalThis.openai
+      .callTool(
+        "__codex_inline_visualization_height__",
+        { height: contentHeight, width: contentWidth },
+      )
+      .catch(() => {});
+  };
+  const scheduleHeightReport = () => {
+    if (heightReportTimer != null) {
+      return;
+    }
+    // Offscreen frames can suspend animation callbacks while their content loads.
+    heightReportTimer = globalThis.setTimeout(() => {
+      heightReportTimer = null;
+      reportHeight();
+    }, 0);
+  };
+
+  const resizeObserver = new ResizeObserver(scheduleHeightReport);
+  const observeBodyChildren = () => {
+    for (const element of document.body.children) {
+      resizeObserver.observe(element);
+    }
+  };
+  resizeObserver.observe(document.body);
+  observeBodyChildren();
+  new MutationObserver(() => {
+    observeBodyChildren();
+    scheduleHeightReport();
+  }).observe(document.body, {
+    childList: true,
+    subtree: true,
+    attributes: true,
+    attributeFilter: ["style", "class", "height", "width"],
+  });
+  globalThis.addEventListener("resize", scheduleHeightReport);
+  if (waitingForStreamRoot != null) {
+    globalThis.addEventListener("openai:set_globals", onStreamGlobals);
+    if (globalThis.openai?.__appBlockStream?.isFinal) {
+      markStreamReady();
+    }
+  }
+  reportHeight();
+})();
+</script>
+<style id="codex-visualization-document-scrollbar">html,body{scrollbar-width:none!important}html::-webkit-scrollbar,body::-webkit-scrollbar{display:none!important}</style>
+
+</body><grammarly-desktop-integration data-grammarly-shadow-root="true" style="visibility: visible !important;"></grammarly-desktop-integration></html>
